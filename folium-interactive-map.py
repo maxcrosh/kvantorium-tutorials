@@ -4,13 +4,6 @@ import folium
 API_KEY = "YOUR_API_KEY"
 basemap = "https://1.base.maps.ls.hereapi.com/maptile/2.1/maptile/newest/normal.day/{z}/{x}/{y}/256/png8"
 
-m = folium.Map(
-      location=[55.7477, 37.62189], 
-      zoom_start=10,
-      tiles= f"{basemap}?apiKey={API_KEY}",
-      attr='HERE'
-    )
-
 def getWeather(lat, lon, apiKey):
   """
   Get weather conditions by coordinates.
@@ -34,13 +27,22 @@ def getWeather(lat, lon, apiKey):
   
   return { "lat": lat, "lon": lon, "temp": temperature }
 
-markerData = getWeather(55.7477, 37.62189, API_KEY)
 
-marker = folium.Marker(
-           location=[markerData['lat'], markerData['lon']],
-           popup=f"{markerData['temp']}"
-         )
+if __name__ == "__main__":
+      m = folium.Map(
+            location=[55.7477, 37.62189], 
+            zoom_start=10,
+            tiles= f"{basemap}?apiKey={API_KEY}",
+            attr='HERE'
+          )
+      
+      markerData = getWeather(55.7477, 37.62189, API_KEY)
 
-marker.add_to(m)
+      marker = folium.Marker(
+                 location=[markerData['lat'], markerData['lon']],
+                 popup=f"{markerData['temp']}"
+               )
 
-m.save("weather-map.html")
+      marker.add_to(m)
+
+      m.save("weather-map.html")
