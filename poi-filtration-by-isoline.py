@@ -38,7 +38,7 @@ def filter_places ():
     if isInsidePolygon:
       yield place
       
-if "__name__" == "__main__":
+if __name__ == "__main__":
   isoline = get_isoline()
   places = [{'title': place['title'], 'lat': place['position']['lat'], 'lng': place['position']['lng']} for place in get_place()['items']]
   print(list(filter_places()))
