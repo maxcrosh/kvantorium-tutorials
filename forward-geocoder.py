@@ -22,5 +22,7 @@ def geocode(text, apiKey=None):
 
   return data
 
-result = geocode('Москва', apiKey=API_KEY)
-print(result)
+
+if __name__ == "__main__":
+  result = geocode('Москва', apiKey=API_KEY)
+  print(result)
