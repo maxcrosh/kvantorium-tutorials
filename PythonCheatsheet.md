@@ -2,4 +2,4 @@
 
 ## Types
 ---
-
+### Numeric Types
