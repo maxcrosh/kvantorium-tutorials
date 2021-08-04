@@ -1,0 +1,5 @@
+# Python cheatsheet
+
+## Types
+---
+
