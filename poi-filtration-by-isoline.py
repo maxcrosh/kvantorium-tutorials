@@ -13,7 +13,7 @@ def get_place():
     'limit': 100
   }
 
-  response_places = requests.get(ENDPOINT, params=params)
+  response_places = requests.get(PLACES_ENDPOINT, params=params)
   return response_places.json()
 
 
