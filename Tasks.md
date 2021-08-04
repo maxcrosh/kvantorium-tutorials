@@ -23,3 +23,7 @@
 
 ---
 ### 5. Сервис геомаркетингового анализа на FastAPI
+* `Задание`: Реализовать асинхронный функционал при выполнении запросов к API.
+* `Документация Places API`: https://developer.here.com/documentation/geocoding-search-api/dev_guide/topics/endpoint-browse-brief.html.
+* `Документация Isoline API`: https://developer.here.com/documentation/isoline-routing-api/dev_guide/index.html.
+* `Рекомендуемые библиотеки`: httpx
