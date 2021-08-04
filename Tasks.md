@@ -11,8 +11,7 @@
 ---
 #### 2. Геокодирование
 * `Задание`: Реализовать функцию обратного геокодирования, для получения списка адресов по координатам.
-* `Документация сревиса`: 
-   https://developer.here.com/documentation/geocoding-search-api/dev_guide/topics/endpoint-reverse-geocode-brief.html.
+* `Документация сревиса`: https://developer.here.com/documentation/geocoding-search-api/dev_guide/topics/endpoint-reverse-geocode-brief.html.
 * `Итоговый формат`: функция на Python принимающая в виде аргументов координаты (широта, долгота) и возвращающая инфомрацию об адресах по координатам.
 * `Рекомендуемые библиотеки`: requests
 
