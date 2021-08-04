@@ -5,6 +5,7 @@
 * Official website - https://roskvantorium.ru/en/
 * Geokvantorium - http://kvantorium.ru/kvantumy/geokvantum/
 * HERE Developer portal - https://developer.here.com/
+* Batch geocoding on Habr - https://habr.com/ru/post/499990/#comment_21563608
 
 
 Documented tutorials on Twilty:
